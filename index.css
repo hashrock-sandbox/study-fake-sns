@@ -97,3 +97,9 @@ h2 {
 }
 .post__contents {
 }
+.post__share {
+  font-size: 0.5em;
+}
+.post__share > a {
+  color: #aaa;
+}
