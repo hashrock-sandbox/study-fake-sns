@@ -66,7 +66,15 @@ li.active {
 textarea {
   flex: 1;
   border: none;
+  transition: all 0.2s ease-in-out;
 }
+textarea.is-coding {
+  background: #333;
+  color: white;
+  min-height: 10em;
+  line-height: 1.5em;
+}
+
 .compose-wrapper {
   border-bottom: 15px solid #eee;
   border-top: 1px solid #ddd;
@@ -102,4 +110,8 @@ h2 {
 }
 .post__share > a {
   color: #aaa;
+}
+.preview {
+  box-sizing: border-box;
+  border: 20px solid #eee;
 }

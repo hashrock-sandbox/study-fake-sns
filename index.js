@@ -1,3 +1,5 @@
+import { html, render } from "https://unpkg.com/lit-html?module";
+
 new Vue({
   el: "#app",
   methods: {
@@ -14,7 +16,30 @@ new Vue({
       );
     },
   },
+  watch: {
+    isCoding(val) {
+      if (val && this.input === "") {
+        this.input =
+          "const myTemplate = (name) => " +
+          "\n" +
+          "html`" +
+          "\n" +
+          "<div>Hello ${name}</div>" +
+          "\n" +
+          "`;" +
+          "\n" +
+          "render(myTemplate('lit-html'), this.$refs.preview);";
+      }
+    },
+    input(val) {
+      if (this.isCoding) {
+        eval(this.input);
+      }
+    },
+  },
+  computed: {},
   data: {
+    isCoding: false,
     input: "",
     items: [
       {
@@ -38,5 +63,12 @@ new Vue({
         contents: "最高",
       },
     ],
+  },
+  mounted() {
+    // テンプレートを定義
+    const myTemplate = (name) => html`<p>Hello ${name}</p>`;
+
+    // テンプレートをページに描画
+    render(myTemplate("World"), this.$refs.preview);
   },
 });
