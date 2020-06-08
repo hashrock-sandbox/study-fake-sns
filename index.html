@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dummy SNS</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="side">
+        <ul>
+          <li class="twitter">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <use xlink:href="feather-sprite.svg#twitter" />
+            </svg>
+            にせもの
+          </li>
+
+          <li class="active">
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <use xlink:href="feather-sprite.svg#home" />
+            </svg>
+            ホーム
+          </li>
+          <li>
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <use xlink:href="feather-sprite.svg#bell" />
+            </svg>
+            通知
+          </li>
+          <li>
+            <svg
+              width="24"
+              height="24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <use xlink:href="feather-sprite.svg#mail" />
+            </svg>
+            メッセージ
+          </li>
+        </ul>
+
+        <button class="tweet">ツイートする</button>
+      </div>
+
+      <div class="timeline">
+        <h2>ホーム</h2>
+        <div class="compose-wrapper">
+          <div class="compose">
+            <div class="compose-textarea">
+              <div class="icon"></div>
+              <textarea placeholder="いまどうしてる？"></textarea>
+            </div>
+            <button class="tweet tweet-mini">ツイートする</button>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="icon"></div>
+          <div class="post__body">
+            <div class="post__username">hoge @hoge</div>
+            <div class="post__contents">見てる</div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="icon"></div>
+          <div class="post__body">
+            <div class="post__username">fuga @fuga</div>
+            <div class="post__contents">すごい</div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="icon"></div>
+          <div class="post__body">
+            <div class="post__username">piyo @piyo</div>
+            <div class="post__contents">かなしい</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

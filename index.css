@@ -1,0 +1,99 @@
+h1 {
+  font-size: 100%;
+  display: flex;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  margin-bottom: 1.5em;
+  margin-left: 0.5em;
+  font-weight: 700;
+  font-size: 110%;
+}
+li > svg {
+  padding-right: 1em;
+}
+.tweet {
+  border: none;
+  background: #17bf63;
+  color: white;
+  padding: 0.75em;
+  font-weight: 700;
+  border-radius: 2em;
+  width: 100%;
+}
+.tweet-mini {
+  max-width: 200px;
+  margin: 0 0 0 auto;
+}
+.twitter {
+  color: #1da1f2;
+  font-weight: 900;
+}
+li.active {
+  color: #17bf63;
+}
+
+.side {
+  width: 200px;
+  padding-right: 2em;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.compose {
+  background: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+textarea {
+  flex: 1;
+  border: none;
+}
+.compose-wrapper {
+  border-bottom: 15px solid #eee;
+  border-top: 1px solid #ddd;
+}
+.compose-textarea {
+  display: flex;
+}
+h2 {
+  margin-left: 1rem;
+}
+.icon {
+  background: #999;
+  width: 50px;
+  height: 50px;
+  border-radius: 2em;
+}
+.post {
+  display: flex;
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+.post__body {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.post__username {
+}
+.post__contents {
+}
